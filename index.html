@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 30px 0;
+        }
+        nav {
+            background-color: #34495E;
+            padding: 15px 0;
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .intro {
+            padding: 40px 20px;
+        }
+        .profiles {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .profile-card {
+            cursor: pointer;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .profile-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume Website</h1>
+        <p>Three Aspiring Professional</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="person1.html">Jay-r</a>
+        <a href="person2.html">Jason</a>
+        <a href="person3.html">Justine</a>
+    </nav>
+
+    <section class="intro">
+        <h2>Welcome!</h2>
+        <p>Explore the resumes of three aspiring professionals. Click on each to learn more about them.</p>
+    </section>
+
+    <section class="profiles">
+        <div class="profile-card" onclick="window.location.href='person1.html'">
+            <img src="https://i.ibb.co/fdT9bWrY/583f214b-c5a2-40d6-a430-497642f902c4.jpg" alt="Person 1">
+            <h3>Jay-r Hernane</h3>
+            <p>Aspiring Web Developer passionate about creating dynamic websites.</p>
+        </div>
+        <div class="profile-card" onclick="window.location.href='person2.html'">
+            <img src="https://i.ibb.co/kFBPpsx/7200bd4f-cd79-4391-ad80-b89b5816b89b.jpg" alt="Person 2">
+            <h3>Jason Malana</h3>
+            <p>Creative Graphic Designer with a flair for digital storytelling.</p>
+        </div>
+        <div class="profile-card" onclick="window.location.href='person3.html'">
+            <img src="https://i.ibb.co/7JYrcjK9/d6bb6ad3-05d9-4d8b-b96f-fcb1dbf54a42.jpg" alt="Person 3">
+            <h3>Justine Abad</h3>
+            <p>Detail-oriented Data Analyst who loves turning data into insights.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Resume Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
